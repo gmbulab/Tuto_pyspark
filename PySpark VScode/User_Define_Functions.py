@@ -9,9 +9,9 @@ from pyspark.sql import SparkSession
 
 
 #Initialisation 
-spark = SparkSession.builder.appName('UDF en Spark').getOrCreate
+spark = SparkSession.builder.appName('UDF en Spark').getOrCreate()
 
 # importer un csv en dataframe 
 
-df = spark.read.csv ('../../Data/ceral.csv')
+df = spark.read.csv ('../Data/cereal.csv')
 df.show()
