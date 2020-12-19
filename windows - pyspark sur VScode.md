@@ -20,9 +20,11 @@
 * Installer VScode : https://code.visualstudio.com/download
 * Première Possibilité : 
   * Aller dans File >> préférence >> setting >> {chercher 'ENV: windows' dans la barre de recherche} >> Edit in settings.json
-  * Ajouter le SPARK_HOME  : 
-  "terminal.integrated.env.windows": {
-        "SPARK_HOME" = "C:\\Users\\gmbul\\spark-3.0.1-bin-hadoop2.7\\spark-3.0.1-bin-hadoop2.7"
+  * Ajouter le SPARK_HOME et HADOOP_HOME  : 
+      "terminal.integrated.env.windows": {
+        "SPARK_HOME"  : "C:\\Users\\gmbul\\spark-3.0.1-bin-hadoop2.7\\spark-3.0.1-bin-hadoop2.7", 
+        "HADOOP_HOME"  : "C:\\Users\\gmbul\\spark-3.0.1-bin-hadoop2.7\\spark-3.0.1-bin-hadoop2.7"
+
     }
     
    * Fermez VScode , installer pyspark en tapant 'conda install -c conda-forge pyspark' dans anaconda prompt ou 'pip install pyspark' depuis un terminal
