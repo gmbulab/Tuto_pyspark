@@ -24,14 +24,17 @@
   "terminal.integrated.env.windows": {
         "SPARK_HOME" = "C:\\Users\\gmbul\\spark-3.0.1-bin-hadoop2.7\\spark-3.0.1-bin-hadoop2.7"
     }
+    
+   * Fermez VScode , installer pyspark en tapant 'conda install -c conda-forge pyspark' dans anaconda prompt ou 'pip install pyspark' depuis un terminal
+   * Redémarez VScode et testez le code 
+   
 * Seconde possibilité 
   * installer findpark en ouvrant anaconda prompt et taper la commande : 'python -m pip install findspark'
-  
-  
+
 Vous pouvez réaliser les tests suivant pour être sûr que ça fonctionne correctement : 
-* Code obligatoire avant d'utiliser spark : 
+* Code obligatoire avant d'utiliser spark : # Uniquement si vous aves choisit la seconde solution avec findspark
      import findspark
-     findspark.init() # Uniquement si vous aves choisit la seconde solution
+     findspark.init() 
      
 * Test du code : 
     import pyspark
