@@ -23,18 +23,13 @@
 
 Vous pouvez réaliser les tests suivant pour être sûr que ça fonctionne correctement : 
 * Code obligatoire avant d'utiliser spark : 
+    
      import findspark
-     
      findspark.init()
 * Teste du code : 
+   
     import pyspark
-    
-    from pyspark.sql 
-    
-    import SparkSession
-    
+    from pyspark.sql import SparkSession
     spark = SparkSession.builder.getOrCreate()
-    
     df = spark.sql("select 'spark' as hello ")
-    
     df.show()
