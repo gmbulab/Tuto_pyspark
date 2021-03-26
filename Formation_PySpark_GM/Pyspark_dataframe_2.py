@@ -10,7 +10,7 @@ spark = SparkSession.builder.appName('Dataframe').getOrCreate()
 
 
 # Import df
-df = spark.read.csv('..\\..\\..\\Data_used\\appl_stock.csv', inferSchema = True, header = True)
+df = spark.read.csv('..\\..\\Data_formation\\\\appl_stock.csv', inferSchema = True, header = True)
 df.printSchema()
 
 # Filter Data where clise >50
